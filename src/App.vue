@@ -5,7 +5,7 @@
       width="130" class="img-mundial" />
     <router-link to="/" class="link-matches">INICIO</router-link>
     <router-link to="/partidos" class="link-matches">PARTIDOS</router-link>
-    <a href="/selecciones" class="link-matches">SELECCIONES</a>
+    <router-link to="/selecciones" class="link-matches">SELECCIONES</router-link>
     <a href="https://www.fifa.com/worldcup/" class="link-matches">CLASIFICACIÓN</a>
     <a href="https://www.fifa.com/worldcup/" class="link-matches">JUGADORES</a>
     <a href="https://www.fifa.com/worldcup/" class="link-matches">ENTRENADORES</a>

@@ -18,6 +18,26 @@ const router = createRouter({
       name: "Selecciones",
       component: () => import("../views/NationalTeamsView.vue"),
     },
+    {
+      path: "/iran",
+      name: "Iran",
+      component: () => import("../views/IranView.vue"),
+    },
+    {
+      path: "/camerun",
+      name: "Camerun",
+      component: () => import("../views/CamerunView.vue"),
+    },
+    {
+      path: "/canada",
+      name: "Canada",
+      component: () => import("../views/CanadaView.vue"),
+    },
+    {
+      path: "/holanda",
+      name: "Holanda",
+      component: () => import("../views/HolandaView.vue"),
+    },
   ],
 });
 
