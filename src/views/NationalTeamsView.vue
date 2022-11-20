@@ -218,7 +218,7 @@ export default {
   font-size: 18px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 4em;
