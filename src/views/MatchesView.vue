@@ -17,7 +17,7 @@ export default {
       .then((data) => {
         console.log(data)
         this.matches = data.matches;
-        alert(data.matches[0]);
+        alert(data.matches[0].fecha);
       });
     this.hoy = this.hoy.toLocaleDateString("es-ES");
   },
