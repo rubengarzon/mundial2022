@@ -9,7 +9,7 @@
     <router-link to="/" class="link-matches">INICIO</router-link>
     <router-link to="/partidos" class="link-matches">PARTIDOS</router-link>
     <router-link to="/selecciones" class="link-matches">SELECCIONES</router-link>
-    <a href="https://www.fifa.com/worldcup/" class="link-matches">ESTADIOS</a>
+    <router-link to="/estadios" class="link-matches">ESTADIOS</router-link>
   </header>
   <router-view></router-view>
   <div class="nav-block">
