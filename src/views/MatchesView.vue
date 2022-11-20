@@ -6,6 +6,7 @@ export default {
     return {
       matches: [],
       selected: 'group',
+      hoy: new Date(),
     };
   },
   methods: {
@@ -17,6 +18,7 @@ export default {
         console.log(data)
         this.matches = data.matches;
       });
+    this.hoy = this.hoy.toLocaleDateString("es-ES");
   },
 };
 </script>
@@ -54,16 +56,26 @@ export default {
     </div>
     <div class="matches" v-if="selected === 'group'">
       <div class="matches__container">
+        <div v-for="match in matches" :key="match.id">
+          <div v-if="match.fecha === '20/11/2022'" class="hoy">
+            <span>HOY - {{ match.hora }}</span>
+            <div class="hoy-match">
+              <img :src=match.banderaLocal alt="">
+              <span>{{ match.partido }}</span>
+              <img :src=match.banderaVisitante alt="">
+            </div>
+          </div>
+        </div>
         <div class="matches__container--item" v-for="match in matches" :key="match.id">
           <div class="matches__container--item__date">
             <p>{{ match.fecha }}</p>
             <span>{{ match.hora }}</span>
           </div>
           <div class="matches__container--item__score">
-            <img :src="match.banderaLocal" alt="bandera local" width="20"
+            <img :src="match.banderaLocal" alt="bandera local" width="50"
               class="matches__container--item__score__flagLocal">
             <p>{{ match.partido }}</p>
-            <img :src="match.banderaVisitante" alt="bandera visitante" width="20"
+            <img :src="match.banderaVisitante" alt="bandera visitante" width="50"
               class="matches__container--item__score__flagAway">
           </div>
           <div class="matches__container--item__group">
@@ -76,6 +88,21 @@ export default {
 </template>
 <!-- eslint-disable prettier/prettier -->
 <style>
+.hoy {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 2em;
+}
+
+.hoy-match {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
 .no-matches {
   text-align: center;
   font-size: 1.5rem;
@@ -86,6 +113,7 @@ export default {
 .filter-match {
   margin-top: 4em;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .filter-match__container--title {
@@ -137,7 +165,7 @@ export default {
 }
 
 .matches__container--item {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -217,13 +245,34 @@ export default {
 .matches__container--item__score {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: black;
+  background-color: white;
+  border-radius: 9px;
+  padding: 2em;
 }
 
 .matches__container--item__score p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 700;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .matches__container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+
+  .filter-match__container--filter__item {
+    display: none;
+  }
+
+  .hoy-match img {
+    width: 50px;
+    margin: 0 10px;
+  }
 }
 </style>

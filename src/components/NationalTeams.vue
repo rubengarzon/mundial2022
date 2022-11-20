@@ -150,6 +150,7 @@ export default {
   width: 100%;
   margin-top: 3em;
   place-items: center;
+  margin-bottom: 3em;
 }
 
 .team {
@@ -195,5 +196,11 @@ export default {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
+
+@media (max-width: 468px) {
+  .teams {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 </style>

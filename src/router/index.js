@@ -38,6 +38,11 @@ const router = createRouter({
       name: "Holanda",
       component: () => import("../views/HolandaView.vue"),
     },
+    {
+      path: "/serbia",
+      name: "serbia",
+      component: () => import("../views/SerbiaView.vue"),
+    },
   ],
 });
 
