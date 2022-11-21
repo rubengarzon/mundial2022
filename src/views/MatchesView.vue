@@ -54,18 +54,20 @@ export default {
     <div v-if="selected === 'final'">
       <p class="no-matches">Los partidos de la Final están por decidir.</p>
     </div>
-    <div class="matches" v-if="selected === 'group'">
-      <div class="matches__container">
-        <div v-for="match in matches" :key="match.id">
-          <div v-if="match.fecha === '20/11/2022'" class="hoy">
-            <span>HOY - {{ match.hora }}</span>
-            <div class="hoy-match">
-              <img :src=match.banderaLocal alt="">
-              <span>{{ match.partido }}</span>
-              <img :src=match.banderaVisitante alt="">
-            </div>
+    <!-- <div class="matches-mobile">
+      <div v-for="match in matches" :key="match.id">
+        <div v-if="match.fecha === hoy" class="hoy">
+          <span>HOY - {{ match.hora }}</span>
+          <div class="hoy-match">
+            <img :src=match.banderaLocal alt="">
+            <span>{{ match.partido }}</span>
+            <img :src=match.banderaVisitante alt="">
           </div>
         </div>
+      </div>
+    </div> -->
+    <div class="matches" v-if="selected === 'group'">
+      <div class="matches__container">
         <div class="matches__container--item" v-for="match in matches" :key="match.id">
           <div class="matches__container--item__date">
             <p>{{ match.fecha }}</p>
@@ -203,12 +205,16 @@ export default {
 }
 
 .matches__container--item__group p {
-  color: blue;
+  color: dimgray;
 }
 
 .matches__container--item__date span {
   margin-left: 0.5em;
-  color: red
+  color: dimgray;
+}
+
+.matches__container--item__date p {
+  color: dimgray;
 }
 
 .matches__container--item__team__flag {
@@ -261,9 +267,15 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .matches__container--item {
+    width: 20em;
+    border-radius: 5px;
+  }
+
   .matches__container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
+    place-items: center;
   }
 
   .filter-match__container--filter__item {
@@ -273,6 +285,27 @@ export default {
   .hoy-match img {
     width: 50px;
     margin: 0 10px;
+  }
+
+  .matches__container--item__score img {
+    width: 30px;
+  }
+
+  .matches__container--item__score p {
+    font-size: 1em;
+  }
+
+  .matches__container--item__score {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .matches__container--item__group p {
+    font-size: 0.8em;
+  }
+
+  .matches__container--item__date p {
+    font-size: 0.8em;
   }
 }
 </style>
