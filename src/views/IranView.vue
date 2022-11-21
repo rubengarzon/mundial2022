@@ -107,7 +107,7 @@
 </template>
 <!-- eslint-disable prettier/prettier -->
 <style>
-.block {
+.block-iran {
   background-color: white;
   width: 50em;
   height: 100%;
@@ -118,7 +118,7 @@
   color: black;
 }
 
-.block h2 {
+.block-iran h2 {
   font-size: 25px;
   font-weight: 600;
   margin: 0;
@@ -130,7 +130,7 @@
   text-align: center;
 }
 
-.block h3 {
+.block-iran h3 {
   font-size: 20px;
   font-weight: 600;
   margin: 0;
@@ -142,7 +142,7 @@
   text-align: center;
 }
 
-.block p {
+.block-iran p {
   font-size: 15px;
   font-weight: 400;
   margin: 0;
@@ -154,33 +154,33 @@
   text-align: justify;
 }
 
-.block img {
+.block-iran img {
   width: 100%;
 }
 
 @media (max-width: 768px) {
-  .block {
+  .block-iran {
     width: 100%;
     margin-bottom: 4em;
   }
 
-  .block h1 {
+  .block-iran h1 {
     font-size: 23px;
   }
 
-  .block h2 {
+  .block-iran h2 {
     font-size: 20px;
   }
 
-  .block h3 {
+  .block-iran h3 {
     font-size: 15px;
   }
 
-  .block p {
+  .block-iran p {
     font-size: 12px;
   }
 
-  .block img {
+  .block-iran img {
     width: 100%;
   }
 }
