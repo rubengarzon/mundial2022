@@ -1,7 +1,7 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
   <div>
-    <div class="block">
+    <div class="block-iran">
       <h2>
         ¿La tercera será la vencida para el Irán de Queiroz?
       </h2>
