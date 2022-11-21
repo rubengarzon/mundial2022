@@ -11,42 +11,42 @@ export default {
 <!-- eslint-disable prettier/prettier -->
 <template>
   <div class="cards">
-    <div class="card-iran">
+    <router-link to="/iran" class="card-iran">
       <img
         src="https://digitalhub.fifa.com/transform/2df44737-2fd2-4d92-824b-0193c225eac1/FIFAPLS_WorldCup22Analysis_01_Hero_10_Iran_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
       <span>¿Tercera vez afortunada para Irán y Queiroz?</span>
-    </div>
-    <div class="card-camerun">
+    </router-link>
+    <router-link to="/camerun" class="card-camerun">
       <img
         src="https://digitalhub.fifa.com/transform/f90bcd2a-a30c-4a24-8bc2-9a1346884342/FIFAPLS_WorldCup22Analysis_01_Hero_31_Cameroon_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
       <span>Camerún cantando de la misma hoja de canciones</span>
-    </div>
-    <div class="card-canada">
+    </router-link>
+    <router-link to="/canada" class="card-canada">
       <img
         src="https://digitalhub.fifa.com/transform/8a59dc23-bb34-45f1-9d98-1c243f8f834c/FIFAPLS_WorldCup22Analysis_01_Hero_14_Canada_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
       <span>Emocionantes canadienses que sorprenden al deporte</span>
-    </div>
-    <div class="card-holanda">
+    </router-link>
+    <router-link to="/holanda" class="card-holanda">
       <img
         src="https://digitalhub.fifa.com/transform/48ea2813-1810-496e-bc01-cb4c3dc0a3a1/FIFAPLS_WorldCup22Analysis_01_Hero_25_Netherlands_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
       <span>Los holandeses buscan redescubrir su identidad en el regreso de la Copa del Mundo</span>
-    </div>
-    <div class="card-serbia">
+    </router-link>
+    <router-link to="/serbia" class="card-serbia">
       <img
         src="https://digitalhub.fifa.com/transform/cc12ada6-a3e7-4736-8e6a-901a8282be3f/Serbia-Team-Analysis-graphic?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
       <span>La Serbia de Stojkovic lista para entretener</span>
-    </div>
-    <div class="card-ghana">
+    </router-link>
+    <router-link to="/ghana" class="card-ghana">
       <img
         src="https://digitalhub.fifa.com/transform/19d478a0-1714-4fcd-a19d-f2392e02c8fc/FIFAPLS_WorldCup22Analysis_01_Hero_16_Ghana_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
       <span>Venganza en el radar para los nuevos Black Stars</span>
-    </div>
+    </router-link>
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -55,6 +55,10 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 4em;
+}
+
+a {
+  text-decoration: none;
 }
 
 .card {

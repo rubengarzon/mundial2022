@@ -15,7 +15,6 @@ export default {
     fetch("https://backend-mundial.vercel.app/api/matches")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
         this.matches = data.matches;
       });
     this.hoy = this.hoy.toLocaleDateString("es-ES");
@@ -306,6 +305,14 @@ export default {
 
   .matches__container--item__date p {
     font-size: 0.8em;
+  }
+
+  .matches__container--item__score__flagLocal {
+    margin-right: 0;
+  }
+
+  .matches__container--item__score__flagAway {
+    margin-left: 0;
   }
 }
 </style>
