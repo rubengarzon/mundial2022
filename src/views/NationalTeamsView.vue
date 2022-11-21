@@ -15,7 +15,7 @@ export default {
       <img
         src="https://digitalhub.fifa.com/transform/2df44737-2fd2-4d92-824b-0193c225eac1/FIFAPLS_WorldCup22Analysis_01_Hero_10_Iran_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
-      <span>¿Tercera vez afortunada para Irán y Queiroz?</span>
+      <span>¿La tercera será la vencida para el Irán de Queiroz?</span>
     </router-link>
     <router-link to="/camerun" class="card-camerun">
       <img
