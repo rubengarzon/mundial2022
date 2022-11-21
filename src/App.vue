@@ -11,7 +11,7 @@
     <router-link to="/selecciones" class="link-matches">SELECCIONES</router-link>
     <router-link to="/estadios" class="link-matches">ESTADIOS</router-link>
   </header>
-  <router-view></router-view>
+
   <div class="nav-block">
     <nav>
       <ul>
@@ -38,7 +38,7 @@
       </ul>
     </nav>
   </div>
-
+  <router-view></router-view>
 </template>
 <!-- eslint-disable prettier/prettier -->
 <style>
