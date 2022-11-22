@@ -17,35 +17,35 @@ export default {
         alt="" width="710" />
       <span>¿La tercera será la vencida para el Irán de Queiroz?</span>
     </router-link>
-    <router-link to="/camerun" class="card-camerun">
+    <router-link to="/polonia" class="card-polonia">
       <img
-        src="https://digitalhub.fifa.com/transform/f90bcd2a-a30c-4a24-8bc2-9a1346884342/FIFAPLS_WorldCup22Analysis_01_Hero_31_Cameroon_00?io=transform:fill,height:648,width:1440&quality=75"
+        src="https://digitalhub.fifa.com/transform/00d7950c-674a-490e-adf7-41da8ec8a194/FIFAPLS_WorldCup22Analysis_01_Hero_27_Poland_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
-      <span>Camerún cantando de la misma hoja de canciones</span>
+      <span>Polonia y Lewandowski quieren olvidar Rusia 2018</span>
     </router-link>
     <router-link to="/canada" class="card-canada">
       <img
         src="https://digitalhub.fifa.com/transform/8a59dc23-bb34-45f1-9d98-1c243f8f834c/FIFAPLS_WorldCup22Analysis_01_Hero_14_Canada_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
-      <span>Emocionantes canadienses que sorprenden al deporte</span>
+      <span>Canadá tiene un solo objetivo: sorprender al mundo</span>
     </router-link>
-    <router-link to="/holanda" class="card-holanda">
+    <router-link to="/australia" class="card-australia">
       <img
-        src="https://digitalhub.fifa.com/transform/48ea2813-1810-496e-bc01-cb4c3dc0a3a1/FIFAPLS_WorldCup22Analysis_01_Hero_25_Netherlands_00?io=transform:fill,height:648,width:1440&quality=75"
+        src="https://digitalhub.fifa.com/transform/d5e01f90-9109-482a-8959-985cadfbae0a/FIFAPLS_WorldCup22Analysis_01_Hero_12_Australia_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
-      <span>Los holandeses buscan redescubrir su identidad en el regreso de la Copa del Mundo</span>
+      <span>Australia: de bajas expectativas a la ilusión como bandera</span>
     </router-link>
     <router-link to="/serbia" class="card-serbia">
       <img
         src="https://digitalhub.fifa.com/transform/cc12ada6-a3e7-4736-8e6a-901a8282be3f/Serbia-Team-Analysis-graphic?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
-      <span>La Serbia de Stojkovic lista para entretener</span>
+      <span>Serbia en Catar: calidad y espectáculo a la búsqueda de un resultado histórico</span>
     </router-link>
     <router-link to="/ghana" class="card-ghana">
       <img
         src="https://digitalhub.fifa.com/transform/19d478a0-1714-4fcd-a19d-f2392e02c8fc/FIFAPLS_WorldCup22Analysis_01_Hero_16_Ghana_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
-      <span>Venganza en el radar para los nuevos Black Stars</span>
+      <span>Ghana se medirá a un viejo conocido en su regreso al Mundial</span>
     </router-link>
   </div>
 </template>
@@ -96,11 +96,11 @@ a {
   font-weight: 600;
 }
 
-.card-camerun {
+.card-polonia {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #028247;
+  background-color: #E90222;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -108,12 +108,12 @@ a {
   transition: all 0.3s ease;
 }
 
-.card-camerun:hover {
-  background-color: #026B3E;
+.card-polonia:hover {
+  background-color: #C6011E;
   transform: scale(1.05);
 }
 
-.card-camerun span {
+.card-polonia span {
   color: white;
   padding: 14px;
   font-size: 18px;
@@ -144,11 +144,11 @@ a {
   font-weight: 600;
 }
 
-.card-holanda {
+.card-australia {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F17D02;
+  background-color: #FFD203;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -156,13 +156,13 @@ a {
   transition: all 0.3s ease;
 }
 
-.card-holanda:hover {
-  background-color: #D16B01;
+.card-australia:hover {
+  background-color: #FFC000;
   transform: scale(1.05);
 }
 
-.card-holanda span {
-  color: white;
+.card-australia span {
+  color: black;
   padding: 14px;
   font-size: 18px;
   font-weight: 600;

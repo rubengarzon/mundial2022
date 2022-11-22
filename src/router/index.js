@@ -29,9 +29,9 @@ const router = createRouter({
       component: () => import("../views/IranView.vue"),
     },
     {
-      path: "/camerun",
-      name: "Camerun",
-      component: () => import("../views/CamerunView.vue"),
+      path: "/polonia",
+      name: "Polonia",
+      component: () => import("../views/PoloniaView.vue"),
     },
     {
       path: "/canada",
@@ -39,14 +39,19 @@ const router = createRouter({
       component: () => import("../views/CanadaView.vue"),
     },
     {
-      path: "/holanda",
-      name: "Holanda",
-      component: () => import("../views/HolandaView.vue"),
+      path: "/australia",
+      name: "Australia",
+      component: () => import("../views/AustraliaView.vue"),
     },
     {
       path: "/serbia",
       name: "serbia",
       component: () => import("../views/SerbiaView.vue"),
+    },
+    {
+      path: "/ghana",
+      name: "ghana",
+      component: () => import("../views/GhanaView.vue"),
     },
   ],
 });
