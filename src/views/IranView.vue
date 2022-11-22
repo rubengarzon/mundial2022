@@ -119,7 +119,7 @@
 }
 
 .block-iran h2 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -131,7 +131,7 @@
 }
 
 .block-iran h3 {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -143,7 +143,7 @@
 }
 
 .block-iran p {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -165,19 +165,19 @@
   }
 
   .block-iran h1 {
-    font-size: 23px;
+    font-size: 27px;
   }
 
   .block-iran h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .block-iran h3 {
-    font-size: 15px;
+    font-size: 22px;
   }
 
   .block-iran p {
-    font-size: 12px;
+    font-size: 17px;
   }
 
   .block-iran img {
