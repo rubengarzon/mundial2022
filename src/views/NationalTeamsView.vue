@@ -232,27 +232,27 @@ a {
   }
 
   .card-iran,
-  .card-camerun,
+  .card-polonia,
   .card-canada,
-  .card-holanda,
+  .card-australia,
   .card-serbia,
   .card-ghana {
     width: 100%;
   }
 
   .card-iran img,
-  .card-camerun img,
+  .card-polonia img,
   .card-canada img,
-  .card-holanda img,
+  .card-australia img,
   .card-serbia img,
   .card-ghana img {
     width: 100%;
   }
 
   .card-iran span,
-  .card-camerun span,
+  .card-polonia span,
   .card-canada span,
-  .card-holanda span,
+  .card-australia span,
   .card-serbia span,
   .card-ghana span {
     font-size: 16px;
