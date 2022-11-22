@@ -7,6 +7,7 @@ export default {
       matches: [],
       selected: 'group',
       hoy: new Date(),
+      matchesNow: [],
     };
   },
   methods: {
@@ -16,6 +17,9 @@ export default {
       .then((response) => response.json())
       .then((data) => {
         this.matches = data.matches;
+        this.matchesNow = this.matches.filter((match) => {
+          return match.fecha === this.hoy;
+        });
       });
     this.hoy = this.hoy.toLocaleDateString("es-ES");
   },
@@ -53,18 +57,19 @@ export default {
     <div v-if="selected === 'final'">
       <p class="no-matches">Los partidos de la Final están por decidir.</p>
     </div>
-    <!-- <div class="matches-mobile">
-      <div v-for="match in matches" :key="match.id">
-        <div v-if="match.fecha === hoy" class="hoy">
-          <span>HOY - {{ match.hora }}</span>
-          <div class="hoy-match">
+    <h2 class="matches-now__title" v-if="matchesNow.length > 0">Partidos de hoy</h2>
+    <div class="matches-now">
+      <div v-for="match in matchesNow" :key="match.id">
+        <div class="hoy">
+          <span>{{ match.hora }}</span>
+          <div class="matches-now__container">
             <img :src=match.banderaLocal alt="">
             <span>{{ match.partido }}</span>
             <img :src=match.banderaVisitante alt="">
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="matches" v-if="selected === 'group'">
       <div class="matches__container">
         <div class="matches__container--item" v-for="match in matches" :key="match.id">
@@ -89,19 +94,33 @@ export default {
 </template>
 <!-- eslint-disable prettier/prettier -->
 <style>
+.matches-now__title {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.matches-now__container {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+.matches-now__container img {
+  width: 50px;
+}
+
+.matches-now {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
 .hoy {
   color: white;
   font-size: 22px;
   margin-bottom: 2em;
-}
-
-.hoy-match {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
 }
 
 .no-matches {
@@ -266,6 +285,14 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+
+  .matches-now {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+
   .matches__container--item {
     width: 20em;
     border-radius: 5px;
