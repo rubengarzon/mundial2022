@@ -255,7 +255,7 @@ a {
   .card-australia span,
   .card-serbia span,
   .card-ghana span {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
   }
 }
