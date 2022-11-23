@@ -26,32 +26,42 @@ const router = createRouter({
     {
       path: "/iran",
       name: "Iran",
-      component: () => import("../views/IranView.vue"),
+      component: () => import("../views/NationalTeamsViews/IranView.vue"),
     },
     {
       path: "/polonia",
       name: "Polonia",
-      component: () => import("../views/PoloniaView.vue"),
+      component: () => import("../views/NationalTeamsViews/PoloniaView.vue"),
     },
     {
       path: "/canada",
       name: "Canada",
-      component: () => import("../views/CanadaView.vue"),
+      component: () => import("../views/NationalTeamsViews/CanadaView.vue"),
     },
     {
       path: "/australia",
       name: "Australia",
-      component: () => import("../views/AustraliaView.vue"),
+      component: () => import("../views/NationalTeamsViews/AustraliaView.vue"),
     },
     {
       path: "/serbia",
       name: "serbia",
-      component: () => import("../views/SerbiaView.vue"),
+      component: () => import("../views/NationalTeamsViews/SerbiaView.vue"),
     },
     {
       path: "/ghana",
       name: "ghana",
-      component: () => import("../views/GhanaView.vue"),
+      component: () => import("../views/NationalTeamsViews/GhanaView.vue"),
+    },
+    {
+      path: "/uruguay",
+      name: "uruguay",
+      component: () => import("../views/NationalTeamsViews/UruguayView.vue"),
+    },
+    {
+      path: "/spain",
+      name: "españa",
+      component: () => import("../views/NationalTeamsViews/SpainView.vue"),
     },
   ],
 });

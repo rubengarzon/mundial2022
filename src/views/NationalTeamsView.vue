@@ -47,6 +47,18 @@ export default {
         alt="" width="710" />
       <span>Ghana se medirá a un viejo conocido en su regreso al Mundial</span>
     </router-link>
+    <router-link to="/uruguay" class="card-uruguay">
+      <img
+        src="https://digitalhub.fifa.com/transform/9ce00770-0671-45b5-bfcf-420955dce0ea/FIFAPLS_WorldCup22Analysis_01_Hero_24_Uruguay_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Uruguay y su Garra Charrúa irán en busca del título en Catar 2022</span>
+    </router-link>
+    <router-link to="/spain" class="card-spain">
+      <img
+        src="https://digitalhub.fifa.com/transform/be37538e-495d-4773-b566-b7c24aa090ed/FIFAPLS_WorldCup22Analysis_01_Hero_05_Spain_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>La rejuvenecida España quiere sorprender al mundo en Catar</span>
+    </router-link>
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -210,6 +222,54 @@ a {
 }
 
 .card-ghana span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-uruguay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #027ECB;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-uruguay:hover {
+  background-color: #0269A9;
+  transform: scale(1.05);
+}
+
+.card-uruguay span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-spain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E50322;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-spain:hover {
+  background-color: #C6021D;
+  transform: scale(1.05);
+}
+
+.card-spain span {
   color: white;
   padding: 14px;
   font-size: 18px;

@@ -191,9 +191,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1em;
-  padding: 1em;
+  padding: 10px;
   border: 1px solid #000;
-  border-radius: 1.5em;
+  border-radius: 8px;
   background-color: white;
 }
 
@@ -275,7 +275,7 @@ export default {
   color: black;
   background-color: white;
   border-radius: 9px;
-  padding: 2em;
+  padding: 8px;
 }
 
 .matches__container--item__score p {
