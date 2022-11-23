@@ -296,7 +296,9 @@ a {
   .card-canada,
   .card-australia,
   .card-serbia,
-  .card-ghana {
+  .card-ghana,
+  .card-uruguay,
+  .card-spain {
     width: 100%;
   }
 
@@ -305,7 +307,9 @@ a {
   .card-canada img,
   .card-australia img,
   .card-serbia img,
-  .card-ghana img {
+  .card-ghana img,
+  .card-uruguay img,
+  .card-spain img {
     width: 100%;
   }
 
@@ -314,7 +318,9 @@ a {
   .card-canada span,
   .card-australia span,
   .card-serbia span,
-  .card-ghana span {
+  .card-ghana span,
+  .card-uruguay span,
+  .card-spain span {
     font-size: 18px;
     text-align: center;
   }
