@@ -284,7 +284,44 @@ export default {
   padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 900px) and (max-width: 1100px) {
+  .matches__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .matches__container--item {
+    border-radius: 3px;
+  }
+
+  .matches__container--item__score {
+    padding: 3px;
+  }
+
+  .matches-now {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .matches__container {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .matches__container--item {
+    border-radius: 3px;
+  }
+
+  .matches__container--item__score {
+    padding: 3px;
+  }
+
+  .matches-now {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
 
   .matches-now {
     display: grid;

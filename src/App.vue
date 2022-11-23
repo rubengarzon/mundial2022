@@ -1,5 +1,12 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
+  <div class="author">
+    <span>Desarrollado por Rubén Garzón</span>
+    <a href="https://www.linkedin.com/in/ruben-dev
+">
+      <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="linkedin" width="15" />
+    </a>
+  </div>
   <header>
     <img
       src="https://digitalhub.fifa.com/transform/3a170b69-b0b5-4d0c-bca0-85880a60ea1a/World-Cup-logo-landscape-on-dark?io=transform:fill&quality=75"
@@ -44,6 +51,16 @@
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Sansita&display=swap");
 
+.author {
+  font-size: 10px;
+  display: flex;
+  float: right;
+}
+
+.author span {
+  margin-right: 3px;
+}
+
 .menu {
   display: none;
 }
@@ -79,6 +96,18 @@ header {
 }
 
 @media (max-width: 768px) {
+
+  header {
+    display: block;
+    margin-top: 3em;
+    text-align: -webkit-center;
+  }
+
+  .author {
+    margin-bottom: 1em;
+    width: 100%;
+    place-content: center;
+  }
 
   .link-mobile {
     font-size: .5rem;

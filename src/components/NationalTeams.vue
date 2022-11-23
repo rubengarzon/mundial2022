@@ -206,6 +206,19 @@ export default {
   margin-bottom: 10px;
 }
 
+@media (min-width: 800px) and (max-width: 939px) {
+  .teams {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .teams {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 @media (max-width: 468px) {
   .teams {
     grid-template-columns: repeat(1, 1fr);
