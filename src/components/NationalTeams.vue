@@ -26,20 +26,28 @@ export default {
         data.teams.forEach(element => {
           if (element.grupo === "A") {
             this.teamsA.push(element)
+            this.teamsA.sort((a, b) => b.puntos - a.puntos)
           } else if (element.grupo === "B") {
             this.teamsB.push(element)
+            this.teamsB.sort((a, b) => b.puntos - a.puntos)
           } else if (element.grupo === "C") {
             this.teamsC.push(element)
+            this.teamsC.sort((a, b) => b.puntos - a.puntos)
           } else if (element.grupo === "D") {
             this.teamsD.push(element)
+            this.teamsD.sort((a, b) => b.puntos - a.puntos)
           } else if (element.grupo === "E") {
             this.teamsE.push(element)
+            this.teamsE.sort((a, b) => b.puntos - a.puntos)
           } else if (element.grupo === "F") {
             this.teamsF.push(element)
+            this.teamsF.sort((a, b) => b.puntos - a.puntos)
           } else if (element.grupo === "G") {
             this.teamsG.push(element)
+            this.teamsG.sort((a, b) => b.puntos - a.puntos)
           } else if (element.grupo === "H") {
             this.teamsH.push(element)
+            this.teamsH.sort((a, b) => b.puntos - a.puntos)
           }
         });
       });
@@ -56,7 +64,7 @@ export default {
       <div v-for="team in teamsA" :key="team.id">
         <div class="block">
           <img :src="team.bandera" alt="bandera" width="22" class="flag" />
-          <span class="name">{{ team.nombre }}</span>
+          <span class="name">{{ team.nombre }} {{ team.puntos }}</span>
         </div>
       </div>
     </div>
@@ -67,7 +75,7 @@ export default {
       <div v-for="team in teamsB" :key="team.id">
         <div class="block">
           <img :src="team.bandera" alt="bandera" width="22" class="flag" />
-          <span class="name">{{ team.nombre }}</span>
+          <span class="name">{{ team.nombre }} {{ team.puntos }}</span>
         </div>
       </div>
     </div>
@@ -78,7 +86,7 @@ export default {
       <div v-for="team in teamsC" :key="team.id">
         <div class="block">
           <img :src="team.bandera" alt="bandera" width="22" class="flag" />
-          <span class="name">{{ team.nombre }}</span>
+          <span class="name">{{ team.nombre }} {{ team.puntos }}</span>
         </div>
       </div>
     </div>
@@ -89,7 +97,7 @@ export default {
       <div v-for="team in teamsD" :key="team.id">
         <div class="block">
           <img :src="team.bandera" alt="bandera" width="22" class="flag" />
-          <span class="name">{{ team.nombre }}</span>
+          <span class="name">{{ team.nombre }} {{ team.puntos }}</span>
         </div>
       </div>
     </div>
@@ -100,7 +108,7 @@ export default {
       <div v-for="team in teamsE" :key="team.id">
         <div class="block">
           <img :src="team.bandera" alt="bandera" width="22" class="flag" />
-          <span class="name">{{ team.nombre }}</span>
+          <span class="name">{{ team.nombre }} {{ team.puntos }}</span>
         </div>
       </div>
     </div>
@@ -111,7 +119,7 @@ export default {
       <div v-for="team in teamsF" :key="team.id">
         <div class="block">
           <img :src="team.bandera" alt="bandera" width="22" class="flag" />
-          <span class="name">{{ team.nombre }}</span>
+          <span class="name">{{ team.nombre }} {{ team.puntos }}</span>
         </div>
       </div>
     </div>
@@ -122,7 +130,7 @@ export default {
       <div class="team" v-for="team in teamsG" :key="team.id" v-on:click="goToPageTeam(team.nombre)">
         <div class="block">
           <img :src="team.bandera" alt="bandera" width="22" class="flag" />
-          <span class="name">{{ team.nombre }}</span>
+          <span class="name">{{ team.nombre }} {{ team.puntos }}</span>
         </div>
       </div>
     </div>
@@ -133,7 +141,7 @@ export default {
       <div v-for="team in teamsH" :key="team.id">
         <div class="block">
           <img :src="team.bandera" alt="bandera" width="22" class="flag" />
-          <span class="name">{{ team.nombre }}</span>
+          <span class="name">{{ team.nombre }} {{ team.puntos }}</span>
         </div>
       </div>
     </div>
@@ -159,7 +167,7 @@ export default {
 
 .teamA {
   background-color: inherit;
-  width: 170px;
+  width: 189px;
   height: 210px;
   border-radius: 10px;
   padding: 10px;
@@ -171,7 +179,7 @@ export default {
   font-weight: bold;
   background-color: white;
   color: black;
-  width: 170px;
+  width: 189px;
   margin-left: -12px;
   text-align: center;
   margin-top: -12px;
