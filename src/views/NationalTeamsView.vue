@@ -59,6 +59,30 @@ export default {
         alt="" width="710" />
       <span>La rejuvenecida España quiere sorprender al mundo en Catar</span>
     </router-link>
+    <router-link to="/suiza" class="card-suiza">
+      <img
+        src="https://digitalhub.fifa.com/transform/8ba3e6e2-b3c0-4b08-bff7-7e029212811f/FIFAPLS_WorldCup22Analysis_01_Hero_23_Switzerland_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Suiza: Una defensa infranqueable</span>
+    </router-link>
+    <router-link to="/japon" class="card-japon">
+      <img
+        src="https://digitalhub.fifa.com/transform/c58bf407-5118-4398-90ea-23778d187030/FIFAPLS_WorldCup22Analysis_01_Hero_29_Japan_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Los Samurai Blue se enfrentan a un gran reto</span>
+    </router-link>
+    <router-link to="/brasil" class="card-brasil">
+      <img
+        src="https://digitalhub.fifa.com/transform/c8ad95c8-93ae-46c3-9dd5-161189d54193/FIFAPLS_WorldCup22Analysis_01_Hero_07_Brazil_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Un Brasil revigorizado y pujante quiere reconciliarse con los títulos</span>
+    </router-link>
+    <router-link to="/camerun" class="card-camerun">
+      <img
+        src="https://digitalhub.fifa.com/transform/f90bcd2a-a30c-4a24-8bc2-9a1346884342/FIFAPLS_WorldCup22Analysis_01_Hero_31_Cameroon_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Camerún esboza un regreso muy prometedor</span>
+    </router-link>
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -276,13 +300,109 @@ a {
   font-weight: 600;
 }
 
+.card-suiza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e70322;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-suiza:hover {
+  background-color: #c6021d;
+  transform: scale(1.05);
+}
+
+.card-suiza span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-japon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #034ea2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-japon:hover {
+  background-color: #023c7a;
+  transform: scale(1.05);
+}
+
+.card-japon span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-brasil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffd304;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-brasil:hover {
+  background-color: #ffc000;
+  transform: scale(1.05);
+}
+
+.card-brasil span {
+  color: black;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-camerun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #028247;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-camerun:hover {
+  background-color: #02693D;
+  transform: scale(1.05);
+}
+
+.card-camerun span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .card span {
   color: black;
   padding: 14px;
   font-size: 18px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1300px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 4em;
@@ -298,7 +418,11 @@ a {
   .card-serbia,
   .card-ghana,
   .card-uruguay,
-  .card-spain {
+  .card-spain,
+  .card-suiza,
+  .card-japon,
+  .card-brasil,
+  .card-camerun {
     width: 100%;
   }
 
@@ -309,7 +433,11 @@ a {
   .card-serbia img,
   .card-ghana img,
   .card-uruguay img,
-  .card-spain img {
+  .card-spain img,
+  .card-suiza img,
+  .card-japon img,
+  .card-brasil img,
+  .card-camerun img {
     width: 100%;
   }
 
@@ -320,7 +448,11 @@ a {
   .card-serbia span,
   .card-ghana span,
   .card-uruguay span,
-  .card-spain span {
+  .card-spain span,
+  .card-suiza span,
+  .card-japon span,
+  .card-brasil span,
+  .card-camerun span {
     font-size: 18px;
     text-align: center;
   }

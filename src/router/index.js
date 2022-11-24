@@ -63,6 +63,26 @@ const router = createRouter({
       name: "españa",
       component: () => import("../views/NationalTeamsViews/SpainView.vue"),
     },
+    {
+      path: "/suiza",
+      name: "suiza",
+      component: () => import("../views/NationalTeamsViews/SuizaView.vue"),
+    },
+    {
+      path: "/japon",
+      name: "japon",
+      component: () => import("../views/NationalTeamsViews/JaponView.vue"),
+    },
+    {
+      path: "/brasil",
+      name: "brasil",
+      component: () => import("../views/NationalTeamsViews/BrasilView.vue"),
+    },
+    {
+      path: "/camerun",
+      name: "camerun",
+      component: () => import("../views/NationalTeamsViews/CamerunView.vue"),
+    },
   ],
 });
 

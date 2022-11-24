@@ -201,7 +201,7 @@
     margin-bottom: 4em;
   }
 
-  .block-uruguay h1 {
+  .block-uruguayA h1 {
     font-size: 29px;
   }
 
