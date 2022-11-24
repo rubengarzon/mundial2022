@@ -1,7 +1,12 @@
 /* color palette from <https://github.com/vuejs/theme> */
 @import url("https://fonts.googleapis.com/css2?family=Sansita&display=swap");
 :root {
-  --vt-c-white: #ffffff;
+  --vt-c-white: linear-gradient(
+    90deg,
+    rgba(143, 12, 46, 1) 0%,
+    rgba(101, 4, 35, 1) 35%,
+    rgba(62, 0, 21, 1) 100%
+  );
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
@@ -37,7 +42,7 @@
   --color-border-hover: var(--vt-c-divider-light-1);
 
   --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --color-text: rgba(235, 235, 235, 0.64);
 
   --section-gap: 160px;
 }
