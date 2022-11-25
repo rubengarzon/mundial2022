@@ -83,6 +83,30 @@ export default {
         alt="" width="710" />
       <span>Camerún esboza un regreso muy prometedor</span>
     </router-link>
+    <router-link to="/argentina" class="card-argentina">
+      <img
+        src="https://digitalhub.fifa.com/transform/35fcd253-9946-4426-aa47-d8808bcf6e39/Argentina-Team-Analysis?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Invicta y campeona, Argentina viaja a Catar en busca de su tercera Copa Mundial</span>
+    </router-link>
+    <router-link to="/portugal" class="card-portugal">
+      <img
+        src="https://digitalhub.fifa.com/transform/ac1d4a94-e262-4a23-a5af-f6e168c14b26/FIFAPLS_WorldCup22Analysis_01_Hero_08_Portugal_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Portugal: talento a raudales en posición de un nuevo título inédito</span>
+    </router-link>
+    <router-link to="/marruecos" class="card-marruecos">
+      <img
+        src="https://digitalhub.fifa.com/transform/43975a66-11f0-4fb6-8253-ea5cb84e92fb/FIFAPLS_WorldCup22Analysis_01_Hero_22_Morocco_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>¿Será Marruecos un equipo revelación en Catar tras superar un ambiente convulso?</span>
+    </router-link>
+    <router-link to="/croacia" class="card-croacia">
+      <img
+        src="https://digitalhub.fifa.com/transform/7c95ae09-ffc2-415d-904f-bcaa7023f40e/FIFAPLS_WorldCup22Analysis_01_Hero_30_Croatia_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Una experimentada Croacia busca emular éxitos pasados</span>
+    </router-link>
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -396,6 +420,102 @@ a {
   font-weight: 600;
 }
 
+.card-argentina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #14afe8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-argentina:hover {
+  background-color: #0f8fc2;
+  transform: scale(1.05);
+}
+
+.card-argentina span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-portugal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f01932;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-portugal:hover {
+  background-color: #d0142a;
+  transform: scale(1.05);
+}
+
+.card-portugal span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-marruecos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #550068;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-marruecos:hover {
+  background-color: #3e004d;
+  transform: scale(1.05);
+}
+
+.card-marruecos span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-croacia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #014fa0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-croacia:hover {
+  background-color: #013a7a;
+  transform: scale(1.05);
+}
+
+.card-croacia span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .card span {
   color: black;
   padding: 14px;
@@ -422,7 +542,10 @@ a {
   .card-suiza,
   .card-japon,
   .card-brasil,
-  .card-camerun {
+  .card-camerun,
+  .card-argentina,
+  .card-portugal,
+  .card-marruecos {
     width: 100%;
   }
 
@@ -437,7 +560,10 @@ a {
   .card-suiza img,
   .card-japon img,
   .card-brasil img,
-  .card-camerun img {
+  .card-camerun img,
+  .card-argentina img,
+  .card-portugal img,
+  .card-marruecos img {
     width: 100%;
   }
 
@@ -452,7 +578,10 @@ a {
   .card-suiza span,
   .card-japon span,
   .card-brasil span,
-  .card-camerun span {
+  .card-camerun span,
+  .card-argentina span,
+  .card-portugal span,
+  .card-marruecos span {
     font-size: 18px;
     text-align: center;
   }
