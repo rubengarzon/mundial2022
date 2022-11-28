@@ -108,6 +108,12 @@ export default {
         alt="" width="710" />
       <span>Túnez alberga grandes sueños para Catar</span>
     </router-link>
+    <router-link to="/arabia" class="card-arabia">
+      <img
+        src="https://digitalhub.fifa.com/transform/f92899b5-e09c-478f-a70e-2686e6ecf9ac/FIFAPLS_WorldCup22Analysis_01_Hero_11_Saudi_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Renard lidera la revolución saudí en Catar 2022</span>
+    </router-link>
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -547,6 +553,30 @@ a {
   font-weight: 600;
 }
 
+.card-arabia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #580069;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-arabia:hover {
+  background-color: #3e004d;
+  transform: scale(1.05);
+}
+
+.card-arabia span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1300px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
@@ -572,7 +602,8 @@ a {
   .card-portugal,
   .card-marruecos,
   .card-croacia,
-  .card-tunez {
+  .card-tunez,
+  .card-arabia {
     width: 100%;
   }
 
@@ -592,7 +623,8 @@ a {
   .card-portugal img,
   .card-marruecos img,
   .card-croacia img,
-  .card-tunez img {
+  .card-tunez img,
+  .card-arabia img {
     width: 100%;
   }
 
@@ -612,7 +644,8 @@ a {
   .card-portugal span,
   .card-marruecos span,
   .card-croacia span,
-  .card-tunez span {
+  .card-tunez span,
+  .card-arabia span {
     font-size: 18px;
     text-align: center;
   }
