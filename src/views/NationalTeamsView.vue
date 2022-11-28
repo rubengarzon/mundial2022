@@ -114,6 +114,12 @@ export default {
         alt="" width="710" />
       <span>Renard lidera la revolución saudí en Catar 2022</span>
     </router-link>
+    <router-link to="/francia" class="card-francia">
+      <img
+        src="https://digitalhub.fifa.com/transform/6632d71f-fe35-4615-a3ce-16a6a4be3ce1/FIFAPLS_WorldCup22Analysis_01_Hero_04_France_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>La campeona Francia intentará defender su corona en Catar</span>
+    </router-link>
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -577,6 +583,30 @@ a {
   font-weight: 600;
 }
 
+.card-francia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1d2f68;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-francia:hover {
+  background-color: #0f1c3d;
+  transform: scale(1.05);
+}
+
+.card-francia span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1300px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
@@ -603,7 +633,8 @@ a {
   .card-marruecos,
   .card-croacia,
   .card-tunez,
-  .card-arabia {
+  .card-arabia,
+  .card-francia {
     width: 100%;
   }
 
@@ -624,7 +655,8 @@ a {
   .card-marruecos img,
   .card-croacia img,
   .card-tunez img,
-  .card-arabia img {
+  .card-arabia img,
+  .card-francia img {
     width: 100%;
   }
 
@@ -645,7 +677,8 @@ a {
   .card-marruecos span,
   .card-croacia span,
   .card-tunez span,
-  .card-arabia span {
+  .card-arabia span,
+  .card-francia span {
     font-size: 18px;
     text-align: center;
   }
