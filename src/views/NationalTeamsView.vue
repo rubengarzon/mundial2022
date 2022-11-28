@@ -1,11 +1,6 @@
 <!-- eslint-disable prettier/prettier -->
 <script>
 export default {
-  methods: {
-    goToPage(page) {
-      window.location = page;
-    },
-  },
 }
 </script>
 <!-- eslint-disable prettier/prettier -->
@@ -106,6 +101,12 @@ export default {
         src="https://digitalhub.fifa.com/transform/7c95ae09-ffc2-415d-904f-bcaa7023f40e/FIFAPLS_WorldCup22Analysis_01_Hero_30_Croatia_00?io=transform:fill,height:648,width:1440&quality=75"
         alt="" width="710" />
       <span>Una experimentada Croacia busca emular éxitos pasados</span>
+    </router-link>
+    <router-link to="/tunez" class="card-tunez">
+      <img
+        src="https://digitalhub.fifa.com/transform/30e0775a-41de-433a-9bd2-159da7780b72/FIFAPLS_WorldCup22Analysis_01_Hero_28_Tunisia_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Túnez alberga grandes sueños para Catar</span>
     </router-link>
   </div>
 </template>
@@ -522,6 +523,30 @@ a {
   font-size: 18px;
 }
 
+.card-tunez {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e40422;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-tunez:hover {
+  background-color: #c3021c;
+  transform: scale(1.05);
+}
+
+.card-tunez span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1300px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
@@ -545,7 +570,9 @@ a {
   .card-camerun,
   .card-argentina,
   .card-portugal,
-  .card-marruecos {
+  .card-marruecos,
+  .card-croacia,
+  .card-tunez {
     width: 100%;
   }
 
@@ -563,7 +590,9 @@ a {
   .card-camerun img,
   .card-argentina img,
   .card-portugal img,
-  .card-marruecos img {
+  .card-marruecos img,
+  .card-croacia img,
+  .card-tunez img {
     width: 100%;
   }
 
@@ -581,7 +610,9 @@ a {
   .card-camerun span,
   .card-argentina span,
   .card-portugal span,
-  .card-marruecos span {
+  .card-marruecos span,
+  .card-croacia span,
+  .card-tunez span {
     font-size: 18px;
     text-align: center;
   }

@@ -103,6 +103,11 @@ const router = createRouter({
       name: "croacia",
       component: () => import("../views/NationalTeamsViews/CroaciaView.vue"),
     },
+    {
+      path: "/tunez",
+      name: "tunez",
+      component: () => import("../views/NationalTeamsViews/TunezView.vue"),
+    },
   ],
 });
 
