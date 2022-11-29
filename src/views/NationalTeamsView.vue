@@ -126,6 +126,12 @@ export default {
         alt="" width="710" />
       <span>Dinamarca, la tapada que rebosa estilo y sustancia</span>
     </router-link>
+    <router-link to="/alemania" class="card-alemania">
+      <img
+        src="https://digitalhub.fifa.com/transform/74832bcf-7927-417c-a16b-47b2bd871201/FIFAPLS_WorldCup22Analysis_01_Hero_21_Germany_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>¿El regreso de Alemania a la cima mundial?</span>
+    </router-link>
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -637,6 +643,30 @@ a {
   font-weight: 600;
 }
 
+.card-alemania {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #201c1b;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-alemania:hover {
+  background-color: #0f0e0e;
+  transform: scale(1.05);
+}
+
+.card-alemania span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1300px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
@@ -665,7 +695,8 @@ a {
   .card-tunez,
   .card-arabia,
   .card-francia,
-  .card-dinamarca {
+  .card-dinamarca,
+  .card-alemania {
     width: 100%;
   }
 
@@ -688,7 +719,8 @@ a {
   .card-tunez img,
   .card-arabia img,
   .card-francia img,
-  .card-dinamarca img {
+  .card-dinamarca img,
+  .card-alemania img {
     width: 100%;
   }
 
@@ -711,7 +743,8 @@ a {
   .card-tunez span,
   .card-arabia span,
   .card-francia span,
-  .card-dinamarca span {
+  .card-dinamarca span,
+  .card-alemania span {
     font-size: 18px;
     text-align: center;
   }

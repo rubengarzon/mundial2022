@@ -123,6 +123,11 @@ const router = createRouter({
       name: "dinamarca",
       component: () => import("../views/NationalTeamsViews/DinamarcaView.vue"),
     },
+    {
+      path: "/alemania",
+      name: "alemania",
+      component: () => import("../views/NationalTeamsViews/AlemaniaView.vue"),
+    },
   ],
 });
 
