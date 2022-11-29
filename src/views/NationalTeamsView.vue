@@ -120,6 +120,12 @@ export default {
         alt="" width="710" />
       <span>La campeona Francia intentará defender su corona en Catar</span>
     </router-link>
+    <router-link to="/dinamarca" class="card-dinamarca">
+      <img
+        src="https://digitalhub.fifa.com/transform/74d78da1-318b-4380-916c-21dcad0861f0/FIFAPLS_WorldCup22Analysis_01_Hero_20_Denmark_00?io=transform:fill,height:648,width:1440&quality=75"
+        alt="" width="710" />
+      <span>Dinamarca, la tapada que rebosa estilo y sustancia</span>
+    </router-link>
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
@@ -607,6 +613,30 @@ a {
   font-weight: 600;
 }
 
+.card-dinamarca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e50420;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-dinamarca:hover {
+  background-color: #c3021c;
+  transform: scale(1.05);
+}
+
+.card-dinamarca span {
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1300px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
@@ -634,7 +664,8 @@ a {
   .card-croacia,
   .card-tunez,
   .card-arabia,
-  .card-francia {
+  .card-francia,
+  .card-dinamarca {
     width: 100%;
   }
 
@@ -656,7 +687,8 @@ a {
   .card-croacia img,
   .card-tunez img,
   .card-arabia img,
-  .card-francia img {
+  .card-francia img,
+  .card-dinamarca img {
     width: 100%;
   }
 
@@ -678,7 +710,8 @@ a {
   .card-croacia span,
   .card-tunez span,
   .card-arabia span,
-  .card-francia span {
+  .card-francia span,
+  .card-dinamarca span {
     font-size: 18px;
     text-align: center;
   }

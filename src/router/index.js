@@ -118,6 +118,11 @@ const router = createRouter({
       name: "Francia",
       component: () => import("../views/NationalTeamsViews/FranciaView.vue"),
     },
+    {
+      path: "/dinamarca",
+      name: "dinamarca",
+      component: () => import("../views/NationalTeamsViews/DinamarcaView.vue"),
+    },
   ],
 });
 
